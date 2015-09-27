@@ -1,0 +1,28 @@
+#container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#playerNode {
+  position: absolute !important;
+  top: 50% !important;
+  height: 50% !important;
+  width: 100% !important;
+}
+
+#editorContainer {
+  position: absolute !important;
+  top: 0 !important;
+  height: 50% !important;
+  width: 100% !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+#head {
+  display: none !important;
+}
+
+.cheatsheet-button {
+  display: none !important;
+}

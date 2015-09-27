@@ -1,0 +1,2 @@
+var require={urlArgs:+new Date};importScripts("../lib/requirejs/require.js");var debug=function(){var e=Function.prototype.call.bind(Array.prototype.slice);postMessage({command:"debug",data:e(arguments)})};
+addEventListener("message",function init(f){var c=f.data;removeEventListener("message",init);require(["bikeshed"],function(d){this.bikeshed=d;var a=new XMLHttpRequest;a.open("GET",c.url);a.send("");a.onload=function(){a=null;var b=d.stage;addEventListener("message",b);b.init(c);Function("stage",this.responseText)(b)}})});
